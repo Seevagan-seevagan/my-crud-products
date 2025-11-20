@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color:#9a6464 */
+}
+
+.nav-bar Link{
+    /* margin-right:20px; */
+    font-size:18px;
+    text-decoration:none;
+    color: blue;
+    font-weight:bold;
+}
+/* Landing page styles */
+.landing {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('../src/assets/1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+/* slightly dark overlay for text readability */
+.landing .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+/* content centered and above overlay */
+.landing .landing-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 15px;
+}
+
+/* title style */
+.landing .title {
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffd700; /* gold-ish */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  margin-bottom: 10px;
+}
+
+/* lead paragraph */
+.landing .lead {
+  font-size: 1.2rem;
+  color: #f6f6f6;
+}
+
+/* CTA buttons */
+.landing .btn-lg {
+  padding: 0.75rem 1.4rem;
+  font-size: 1.05rem;
+}
+
+/* make navbar a bit transparent when on landing page */
+.nav-bar {
+  background: rgba(0,0,0,0.6) !important;
+}
+
+/* adjust link styles if needed */
+.navbar-brand.text-danger {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
